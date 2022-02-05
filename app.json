@@ -47,7 +47,7 @@
     "PM_AUTO_BAN": {
       "description": "Pengalihan Fitur Larangan Otomatis PM. Juga dikenal sebagai modul Penjaga Chat Anda ketik (true) jika ingin aktifkan dan /skip untung melanjutkan ke vars selanjutnya.",
       "value": "False",
-      "required": True
+      "required": true
     },
 
     "DEFAULT_BIO": {
