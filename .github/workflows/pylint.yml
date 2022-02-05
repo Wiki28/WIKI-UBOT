@@ -26,9 +26,9 @@ jobs:
       # commit changes
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'pylint: auto fixes'
+          commit_message: 'wiki-ubot: auto fixes'
           commit_options: '--no-verify --signoff'
           repository: .
-          commit_user_name: vckyou
-          commit_user_email: viicky.auliaz@gmail.com
-          commit_author: vckyou <viicky.auliaz@gmail.com>
+          commit_user_name: wiki28
+          commit_user_email: wikiwahyudi28@gmail.com
+          commit_author: wiki28 <wikiwahyudi28@gmail.com>
