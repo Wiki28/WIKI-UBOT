@@ -96,11 +96,11 @@ def register(**args):
                 if not disable_errors:
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
-                    text = "**Geez-Project ERROR**\n"
-                    link = "Silahkan chat: @VckyouuBitch"
+                    text = "**WIKI-UBOT ERROR**\n"
+                    link = "Silahkan chat: @Wiki_W"
                     text += "Untuk melaporkan kesalahan"
                     text += f"tinggal teruskan pesan ini {link}.\n"
-                    text += "Vcky Siap Membantu Kamu\n"
+                    text += "Wiki Siap Membantu Kamu\n"
 
                     ftext = "========== DISCLAIMER =========="
                     ftext += "\nThis file uploaded ONLY here,"
