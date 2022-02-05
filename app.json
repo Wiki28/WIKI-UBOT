@@ -1,6 +1,6 @@
 {
-  "name": "⚡𝗚𝗲𝗲𝘇 𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡",
-  "description": "🚫Geez-UserBot🚫 USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "name": "⚡𝚆𝙸𝙺𝙸-𝚄𝙱𝙾𝚃⚡",
+  "description": "😑𝚆𝙸𝙺𝙸-𝚄𝙱𝙾𝚃😑 USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "",
   "keywords": [
     "telegram",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/vckyou/Geez-UserBot",
-  "telegram": "https://t.me/VckyouuBitch",
-  "success_url": "https://t.me/GeezSupportGroup",
+  "repository": "https://github.com/Wiki28/WIKI-UBOT",
+  "telegram": "https://t.me/Wiki_W",
+  "success_url": "https://t.me/WikiTapiGroup",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -40,14 +40,14 @@
       "required": true
     },
     "BOTLOG_CHATID": {
-      "description": "Buatlah Sebuah Grup Publik Lalu Masukkan Bot @MissRose_Bot Ke Grup Mu, Setelah itu Ketik /id. Nanti akan muncul ID seperti ini Contoh : -1001234567890",
+      "description": "Buatlah Sebuah Grup Publik Lalu Masukkan Bot @MissRose_Bot Ke Grup Mu, Setelah itu Ketik /id. Nanti akan muncul ID seperti ini Contoh : -1001667983274",
       "value": "Isi ID Grup Anda Yang BerAwalan -100",
       "required": true
     },
     "PM_AUTO_BAN": {
       "description": "Pengalihan Fitur Larangan Otomatis PM. Juga dikenal sebagai modul Penjaga Chat Anda ketik (true) jika ingin aktifkan dan /skip untung melanjutkan ke vars selanjutnya.",
       "value": "False",
-      "required": true
+      "required": True
     },
 
     "DEFAULT_BIO": {
