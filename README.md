@@ -1,6 +1,3 @@
-https://dashboard.heroku.com/new?template=https://github.com/Wiki28/WIKI-UBOT
-
-
 <p align="center">
    <a href="https://github.com/Wiki28/WIKI-UBOT"><img src="https://telegra.ph/file/6a269cacab540ddc8f8b8.jpg" alt="Geez Projects" width=400px></a>
    <br>
