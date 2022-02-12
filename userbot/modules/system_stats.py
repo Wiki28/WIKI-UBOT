@@ -164,8 +164,8 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⚜-**⚡Geez-Project⚡ Versi:** \n "
-            f"heads/Geez-Userbot-0-x634i7u1"
+            "**⚜-**⚡Wiki-Projects⚡ Versi:** \n "
+            f"heads/WIKI-UBOT-0-x634i7u1"
             "\n**⚜-**Revisi:**\n "
             f"{revout}"
         )
@@ -223,14 +223,14 @@ async def pipcheck(pip):
         await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
 
 
-@register(outgoing=True, pattern=r"^\.(?:geezalive)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:wikialive)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"\n__**{GEEZ_TEKS_KUSTOM}**__\n"
+        f"\n__**{WIKI_TEKS_KUSTOM}**__\n"
         f"**╭───────────────────**\n"
-        f"**├[• 🤴 Geez Owner** \n"
+        f"**├[• 🤴 Wiki Owner** \n"
         f"├[•   : `{DEFAULTUSER}` \n"
         f"**├[• 🔎 Username** \n"
         f"├[•   : `@{user.username}` \n"
@@ -260,21 +260,21 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:gezza)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:wikiubot)\s?(.)?")
 async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**ㅤㅤㅤㅤ ⚡ＧΞ ΞＺ - ＰＲＯＪＥＣＴ⚡**\n"
+        f"**ㅤㅤㅤㅤ ⚡WIKI PROJECTS⚡**\n"
         f"╔══════════╬════╬══════════╗ \n"
-        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[ＧΞ ΞＺ](t.me/VckyouuBitch)             ㅤ ║\n"
+        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[Wiki W](t.me/Wiki_W)             ㅤ ║\n"
         f"╟⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Ubuntu 20.10            ║\n"
         f"╟⟩⟩ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}                ㅤㅤ  ║\n"
         f"╟⟩⟩ 🐍 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} ㅤㅤㅤㅤ         ║\n"
         f"╟⟩⟩ 👾 • `ʙᴏᴛ      :`v.{BOT_VER}                ㅤㅤㅤ ║\n"
         f"╟⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   ║\n"
         f"╚══════════╬════╬══════════╝ \n"
-        f"🔰 : [𝗥𝗘𝗣𝗢-𝙂𝙚𝙚𝙯](https://github.com/vckyou/Geez-UserBot)\n👥 : [ＧΞ ΞＺ-𝗧𝗘𝗔𝗠](t.me/GeezSupportGroup)\n👤 : [𝗢𝗪𝗡𝗘𝗥](t.me/Vckyouuu)\n"
+        f"🔰 : [Repo](https://github.com/Wiki28/WIKI-UBOT)\n👥 : [Group](t.me/WikiTapiGroup)\n👤 : [Owner](t.me/Wiki_W)\n"
     )
     if ALIVE_LOGO:
         try:
@@ -311,7 +311,7 @@ async def redis(alive):
     await asyncio.sleep(2)
     output = (
         f"╭═──────╼═⌘═╾───────═\n"
-        f"┃⚡ＧΞ ΞＺ - ＰＲＯＪＥＣＴ⚡\n"
+        f"┃   ⚡WIKI PROJECTS⚡\n"
         f"╰═─────╼══⌘══╾─────═ \n"
         f" ❍ `Name     :` {DEFAULTUSER} \n"
         f" ❍ `Username :` @{user.username} \n"
@@ -321,8 +321,8 @@ async def redis(alive):
         f" ❍ `Bot Ver  :` {BOT_VER} \n"
         f" ❍ `Modules  :` {len(modules)} Modules \n"
         f"╭═───────╼⌘╾───────═ \n"
-        f"┃[𝗥𝗲𝗽𝗼](https://github.com/Geez-UserBot)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/GeezSupportGroup)  |  "
-        f"[𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/vckyouuu)\n"
+        f"┃[𝗥𝗲𝗽𝗼](https://github.com/Wiki28)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/WikiTapiGroup)  |  "
+        f"[𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/terserah_wiki)\n"
         f"╰═──────╼═⌘═╾───────═")
     if ALIVE_LOGO:
         try:
@@ -375,7 +375,7 @@ CMD_HELP.update({
 })
 CMD_HELP.update({
     "alive":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.geezalive`"
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.wikialive`"
     "\n↳ : To see whether your bot is working or not."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.aliveu` <text>"
     "\n↳ : Changes the 'user' in alive to the text you want."
