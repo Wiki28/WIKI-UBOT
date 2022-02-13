@@ -15,6 +15,7 @@ async def typewriter(typew):
 
 # Create by myself @localheart
 
+
 @register(outgoing=True, pattern='^.sayangku(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
