@@ -53,7 +53,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari ⚡Wiki-Projects⚡.`'
+                ' untuk dapat deploy perubahan terbaru dari ⚡ᴡɪᴋɪ-ᴜʙᴏᴛ⚡.`'
             )
             repo.__del__()
             return
@@ -63,11 +63,11 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy Wiki-Projects dyno.`'
+                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy ᴡɪᴋɪ-ᴜʙᴏᴛ dyno.`'
             )
             return repo.__del__()
         await event.edit('`[HEROKU]:'
-                         '\nSedang MengUpdate ⚡Wiki-Projects⚡, Mohon Menunggu 5-7 Menit`'
+                         '\nSedang MengUpdate ⚡ᴡɪᴋɪ-ᴜʙᴏᴛ⚡, Mohon Menunggu 5-7 Menit`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -91,14 +91,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`Wiki-Projects Berhasil Di Deploy!\n" "Restarting, Mohon Tunggu Sebentar.....`")
+            await event.edit("`ᴡɪᴋɪ-ᴜʙᴏᴛ Berhasil Di Deploy!\n" "Restarting, Mohon Tunggu Sebentar.....`")
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "`Wiki-Projects Berhasil Di Update`")
+                "`ᴡɪᴋɪ-ᴜʙᴏᴛ Berhasil Di Update`")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -115,9 +115,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('**⚡Wiki-Projects⚡** `Berhasil Di Update!`')
+    await event.edit('**⚡ᴡɪᴋɪ-ᴜʙᴏᴛ⚡** `Berhasil Di Update!`')
     await asyncio.sleep(1)
-    await event.edit('**⚡Wiki-Projects⚡** `Di Restart....`')
+    await event.edit('**⚡ᴡɪᴋɪ-ᴜʙᴏᴛ⚡** `Di Restart....`')
     await asyncio.sleep(1)
     await event.edit('`Mohon Menunggu Beberapa Detik.`')
     await asyncio.sleep(10)
@@ -126,7 +126,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#BOT \n"
-            "**⚡Wiki-Projects⚡ Telah Di Perbarui.**")
+            "**⚡ᴡɪᴋɪ-ᴜʙᴏᴛ⚡ Telah Di Perbarui.**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -188,13 +188,13 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n⚡Wiki-Projects⚡ Sudah Versi Terbaru\n')
+            f'\n⚡ᴡɪᴋɪ-ᴜʙᴏᴛ⚡ Sudah Versi Terbaru\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f'**Pembaruan Untuk ⚡Wiki-Projects⚡ :\n\n💻 Pembaruan Data :**\n`{changelog}`'
+        changelog_str = f'**Pembaruan Untuk ⚡ᴡɪᴋɪ-ᴜʙᴏᴛ⚡ :\n\n💻 Pembaruan Data :**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -208,7 +208,7 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('**Perintah Untuk Update, Sebagai Berikut.**\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update now`\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari ⚡Wiki-Projects⚡.__')
+        return await event.respond('**Perintah Untuk Update, Sebagai Berikut.**\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update now`\n 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari ⚡ᴡɪᴋɪ-ᴜʙᴏᴛ⚡.__')
 
     if force_update:
         await event.edit(
@@ -234,9 +234,9 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update`"
-    "\n• : Untuk Melihat Pembaruan Terbaru Wiki-Projects."
+    "\n• : Untuk Melihat Pembaruan Terbaru ᴡɪᴋɪ-ᴜʙᴏᴛ."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update now`"
-    "\n• : Memperbarui Wiki-Projects."
+    "\n• : Memperbarui ᴡɪᴋɪ-ᴜʙᴏᴛ."
     "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.update deploy`"
-    "\n• : Memperbarui Wiki-Projects Dengan Cara Men-Deploy Ulang."
+    "\n• : Memperbarui ᴡɪᴋɪ-ᴜʙᴏᴛ Dengan Cara Men-Deploy Ulang."
 })
