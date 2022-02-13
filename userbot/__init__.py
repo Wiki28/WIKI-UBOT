@@ -180,7 +180,7 @@ YOUTUBE_API_KEY = os.environ.get(
     "YOUTUBE_API_KEY",
     "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg")
 
-# Untuk Perintah .geez
+# Untuk Perintah .wikii
 WIKI_TEKS_KUSTOM = os.environ.get("WIKI_TEKS_KUSTOM", None)
 
 # Default .alive Name
@@ -362,7 +362,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```𝘊𝘰𝘯𝘨𝘳𝘢𝘵𝘴𝘴... ⚡𝘎𝘦𝘦𝘻 𝘜𝘚𝘌𝘙𝘉𝘖𝘛⚡ Has Been Active!!```")
+    await bot.send_message(BOTLOG_CHATID, "```𝘊𝘰𝘯𝘨𝘳𝘢𝘵𝘴𝘴... ⚡ᴡɪᴋɪ-ᴜʙᴏᴛ⚡ Has Been Active!!```")
     return
 
 with bot:
@@ -464,7 +464,7 @@ with bot:
                     "`You cannot send inline results in this chat (caused by SendInlineBotResultRequest)`"
                 )
 
-        geezlogo = INLINE_PIC
+        wikilogo = INLINE_PIC
         plugins = CMD_HELP
         vr = BOT_VER
 
@@ -473,7 +473,7 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"Hallo [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang Di\n**Geez - Project**\nKalo mau tau lebih lanjut silahkan Join Ke \n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
+                    f"Hallo [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang Di\n**ᴡɪᴋɪ-ᴜʙᴏᴛ**\nKalo mau tau lebih lanjut silahkan Join Ke \n**Group Support** Dibawah Ini.\n",
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
@@ -505,7 +505,7 @@ with bot:
             current_page_number = int(lockpage)
             buttons = paginate_help(current_page_number, plugins, "helpme")
             await event.edit(
-                file=geezlogo,
+                file=wikilogo,
                 buttons=buttons,
                 link_preview=False,
             )
@@ -516,10 +516,10 @@ with bot:
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@Geez-Project"):
+                    "@WikiTapiChannel"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=geezlogo,
+                    file=wikilogo,
                     link_preview=False,
                     text=f"⚡𝚆𝙸𝙺𝙸-𝚄𝙱𝙾𝚃⚡\n\n⚡**Owner : {DEFAULTUSER}**\n\n⚡ **Bot Ver :** `5.0`\n⚡ **Modules :** `{len(plugins)}`\n\n⚡ **Dev : @Wiki_W **".format(
                         len(dugmeler),
@@ -574,7 +574,7 @@ with bot:
             if event.query.user_id == uid:  # @WikiTapiChannel
                 # https://t.me/TelethonChat/115200
                 await event.edit(
-                    file=geezlogo,
+                    file=wikilogo,
                     link_preview=True,
                     buttons=[
                         [
