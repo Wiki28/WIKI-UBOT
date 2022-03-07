@@ -362,7 +362,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```ᴡɪᴋɪ-ᴜʙᴏᴛ😑 Dah Aktif Ye!!```")
+    await bot.send_message(BOTLOG_CHATID, "```WIKI-UBOT😑 Dah Aktif Ye!!```")
     return
 
 with bot:
@@ -473,7 +473,7 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"Hallo [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang Di\n**ᴡɪᴋɪ-ᴜʙᴏᴛ**\nKalo mau tau lebih lanjut silahkan Join Ke \n**Group Support** Dibawah Ini.\n",
+                    f"Hallo [{get_display_name(u)}](tg://user?id={u.id}) Selamat Datang Di\n**WIKI-UBOT**\nKalo mau tau lebih lanjut silahkan Join Ke \n**Group Support** Dibawah Ini.\n",
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
